@@ -12,8 +12,6 @@ public class App
     {
         Client client = new Client("localhost", 1112);
         boolean running = true;
-
-
         while (running) {
             String data = client.getMessageToSend();
             if (data.equals("exit")) {
